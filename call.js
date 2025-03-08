@@ -47,10 +47,10 @@
                     }
                     
                   }
-                  console.log("  result = ",result);
+                  
                   ipt.value=result;
                    forarray=forarray+" = "+result;
-                  console.log(forarray);
+                  
                   let newpara=document.createElement('p');
                   let histdiv=document.querySelector('.history');
                   newpara.textContent=forarray;
@@ -81,7 +81,7 @@
       function tog(){
        let history=document.querySelector('.history');
         history.classList.toggle('hist');
-        console.log(history);
+        
        
       }
      
