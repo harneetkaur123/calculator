@@ -1,0 +1,114 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow: visible;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#container{
+    height: 70%;
+    width: 30%;
+    border: 1px solid red;
+    border-radius: 30px;
+    background-color: rgb(66, 64, 64);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+input{
+    box-sizing: border-box;
+    width: 93%;
+    padding: 3%;
+    height: 20%;
+    margin-top: 5%;
+    text-align: right;
+    background-color: rgb(38, 36, 36);
+    color: white;
+    font-size: xx-large;
+    border-radius: 15px;
+    text-decoration: none;
+    border: none;
+    
+}
+#keys{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 3%;
+    height: 75%;
+    /* border: 1px solid blue; */
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    grid-column-gap: 4%;
+    justify-content: center;
+    background-color: rgb(66, 64, 64);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    
+}
+.btn{
+    padding: 2%;
+    margin: 4% 0%;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    font-size: large;
+}
+.no{
+    background-color: orange;
+}
+.history{
+    height: 50%;
+    width:0;
+    background-color: black;
+
+    position: absolute;
+    left:0;
+    bottom:17%;
+    right: 0;
+    overflow: hidden;
+    opacity: 0;
+    display: block;
+    color: white;
+    font-size: xx-large;
+    text-align: center;
+    overflow-y: scroll;
+   
+}
+.history p{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.575);
+    
+}
+.hist{
+    width:70%;
+   transition: width,4s ,ease,1s;
+  opacity: 1;
+}
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+::-webkit-scrollbar-track{
+    background:black;
+}
+::-webkit-scrollbar-thumb{
+    
+
+    background: white;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+   background: rgb(114, 113, 113);
+}
